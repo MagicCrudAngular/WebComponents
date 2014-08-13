@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="import" href="hello-world.html">
+    </head>
+
+    <body ng-app ng-init="times=[1,2]">
+        <hello-world who="querido lector {{time}}" ng-repeat="time in times">
+            <p>te saludo desde un web component</p>
+        </hello-world>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+    </body>
+</html>
